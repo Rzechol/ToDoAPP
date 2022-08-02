@@ -8,17 +8,31 @@
 
 /* Begin PBXBuildFile section */
 		9804536B28982B3500767C05 /* ToDoAPPApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9804536A28982B3500767C05 /* ToDoAPPApp.swift */; };
-		9804536D28982B3500767C05 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9804536C28982B3500767C05 /* ContentView.swift */; };
 		9804536F28982B3800767C05 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9804536E28982B3800767C05 /* Assets.xcassets */; };
 		9804537228982B3800767C05 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9804537128982B3800767C05 /* Preview Assets.xcassets */; };
+		9804537A28982B9800767C05 /* ListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9804537928982B9800767C05 /* ListView.swift */; };
+		9804537C28982DA700767C05 /* ListRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9804537B28982DA700767C05 /* ListRowView.swift */; };
+		9804537E2898305700767C05 /* AddView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9804537D2898305700767C05 /* AddView.swift */; };
+		980453812898369F00767C05 /* TodoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 980453802898369F00767C05 /* TodoModel.swift */; };
+		98BA8BD128985D45004A7D2A /* ListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98BA8BD028985D45004A7D2A /* ListViewModel.swift */; };
+		98BA8BD328992188004A7D2A /* NoTodoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98BA8BD228992188004A7D2A /* NoTodoView.swift */; };
+		98BA8BD528992CA4004A7D2A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 98BA8BD428992CA4004A7D2A /* LaunchScreen.storyboard */; };
+		98BA8BD728995F69004A7D2A /* infoPanelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98BA8BD628995F69004A7D2A /* infoPanelView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		9804536728982B3500767C05 /* ToDoAPP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ToDoAPP.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9804536A28982B3500767C05 /* ToDoAPPApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoAPPApp.swift; sourceTree = "<group>"; };
-		9804536C28982B3500767C05 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		9804536E28982B3800767C05 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9804537128982B3800767C05 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		9804537928982B9800767C05 /* ListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListView.swift; sourceTree = "<group>"; };
+		9804537B28982DA700767C05 /* ListRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListRowView.swift; sourceTree = "<group>"; };
+		9804537D2898305700767C05 /* AddView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddView.swift; sourceTree = "<group>"; };
+		980453802898369F00767C05 /* TodoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoModel.swift; sourceTree = "<group>"; };
+		98BA8BD028985D45004A7D2A /* ListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewModel.swift; sourceTree = "<group>"; };
+		98BA8BD228992188004A7D2A /* NoTodoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoTodoView.swift; sourceTree = "<group>"; };
+		98BA8BD428992CA4004A7D2A /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		98BA8BD628995F69004A7D2A /* infoPanelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = infoPanelView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,8 +65,10 @@
 		9804536928982B3500767C05 /* ToDoAPP */ = {
 			isa = PBXGroup;
 			children = (
+				98BA8BCF28985D25004A7D2A /* ViewModels */,
+				9804537F2898368400767C05 /* Models */,
+				9804537828982B7900767C05 /* Views */,
 				9804536A28982B3500767C05 /* ToDoAPPApp.swift */,
-				9804536C28982B3500767C05 /* ContentView.swift */,
 				9804536E28982B3800767C05 /* Assets.xcassets */,
 				9804537028982B3800767C05 /* Preview Content */,
 			);
@@ -65,6 +81,35 @@
 				9804537128982B3800767C05 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		9804537828982B7900767C05 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				9804537928982B9800767C05 /* ListView.swift */,
+				9804537B28982DA700767C05 /* ListRowView.swift */,
+				9804537D2898305700767C05 /* AddView.swift */,
+				98BA8BD228992188004A7D2A /* NoTodoView.swift */,
+				98BA8BD428992CA4004A7D2A /* LaunchScreen.storyboard */,
+				98BA8BD628995F69004A7D2A /* infoPanelView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		9804537F2898368400767C05 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				980453802898369F00767C05 /* TodoModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		98BA8BCF28985D25004A7D2A /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				98BA8BD028985D45004A7D2A /* ListViewModel.swift */,
+			);
+			path = ViewModels;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,6 +170,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				98BA8BD528992CA4004A7D2A /* LaunchScreen.storyboard in Resources */,
 				9804537228982B3800767C05 /* Preview Assets.xcassets in Resources */,
 				9804536F28982B3800767C05 /* Assets.xcassets in Resources */,
 			);
@@ -137,8 +183,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9804536D28982B3500767C05 /* ContentView.swift in Sources */,
+				9804537E2898305700767C05 /* AddView.swift in Sources */,
+				9804537A28982B9800767C05 /* ListView.swift in Sources */,
+				98BA8BD328992188004A7D2A /* NoTodoView.swift in Sources */,
+				98BA8BD128985D45004A7D2A /* ListViewModel.swift in Sources */,
 				9804536B28982B3500767C05 /* ToDoAPPApp.swift in Sources */,
+				98BA8BD728995F69004A7D2A /* infoPanelView.swift in Sources */,
+				980453812898369F00767C05 /* TodoModel.swift in Sources */,
+				9804537C28982DA700767C05 /* ListRowView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -264,6 +316,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"ToDoAPP/Preview Content\"";
@@ -272,7 +325,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -293,6 +346,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"ToDoAPP/Preview Content\"";
@@ -301,7 +355,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
